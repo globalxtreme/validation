@@ -1,6 +1,6 @@
 <?php
 
-namespace GlobalXtreme\Validator;
+namespace GlobalXtreme\Validation;
 
 use Illuminate\Support\ServiceProvider;
 
