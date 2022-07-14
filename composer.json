@@ -1,0 +1,31 @@
+{
+  "name": "globalxtreme/validation",
+  "description": "GlobalXtreme Validation Pattern",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuswa",
+      "email": "yuswa98@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "GlobalXtreme\\Validation\\": "src/"
+    }
+  },
+  "require": {
+    "php": "8.*",
+    "globalxtreme/response": "1.0.13"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "GlobalXtreme\\Validation\\ValidationServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
