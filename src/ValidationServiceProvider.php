@@ -9,7 +9,7 @@ class ValidationServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../stubs/request.stub' => base_path('stubs'),
+            __DIR__.'/../stubs/request.stub' => base_path('stubs/request.stub'),
         ],'globalxtreme-validation');
     }
 
