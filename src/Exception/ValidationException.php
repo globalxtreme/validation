@@ -42,7 +42,7 @@ class ValidationException extends Exception
 
         $response = $this->isObject ? "object" : "json";
 
-        return Response::$response($error);
+        return Response::$response($error, httpStatus: ResponseConstant::HTTP_STATUS_CODE['BAD_REQUEST']);
     }
 
 }
