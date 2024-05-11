@@ -37,12 +37,12 @@ class ValidationException extends Exception
             ];
         }
 
-        $error = new Status(false, ResponseConstant::GLOBAL['VALIDATION']);
+        $error = new Status(400, "Missing required parameter");
         $error->setAttributes($attributes);
 
         $response = $this->isObject ? "object" : "json";
 
-        return Response::$response($error, httpStatus: ResponseConstant::HTTP_STATUS_CODE['BAD_REQUEST']);
+        return Response::$response($error);
     }
 
 }

@@ -15,7 +15,7 @@
   },
   "require": {
     "php": "8.*",
-    "globalxtreme/response": "^1.1"
+    "globalxtreme/response": "^2.0"
   },
   "extra": {
     "laravel": {
