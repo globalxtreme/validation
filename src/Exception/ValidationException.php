@@ -37,7 +37,7 @@ class ValidationException extends Exception
             ];
         }
 
-        $error = new Status(400, "Missing required parameter");
+        $error = new Status(400, "There is data that has not been filled in!!");
         $error->setAttributes($attributes);
 
         $response = $this->isObject ? "object" : "json";
